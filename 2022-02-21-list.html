@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>清單</title>
+</head>
+<body>
+
+<!-- 一份清單項目 -->
+  <ul>
+    <li>我是清單</li>
+    <li>我是清單</li>
+    <li>我是清單</li>
+  </ul>
+
+<!-- 兩份清單項目 -->
+  <ul>
+    <li>我是清單</li>
+  <ul>
+
+  <ul>
+    <li>我是清單</li>
+  <ul>
+
+<!-- 架構挑戰(忽略顯示的外觀) -->
+<!-- 下列哪一個符合
+ 第一章
+    第一節
+  的涵義？   -->
+<!-- 上 -->
+<!-- 提示：第一章的"下一階"是第一節，需要有階層性 -->
+<!-- 選上，第一節 是屬於 第一章的內容，第一節是第一章的下一階，第一章包裹住第一節 -->
+<!-- 第一節的 ul 是第一章的子層，也就是說，第一章的下一階是第一節  -->
+  <ul>
+    <li>第一章
+      <ul>
+        <li>第一節</li>
+      </ul>
+    </li>
+    <li>我是清單</li>
+    <li>我是清單</li>
+  </ul>
+<!-- 下 -->
+<!-- 不正確，第一章和第一節放在同一層，沒有上下階層關係，第一章 <li> 未包裹住第一節 <ul> -->
+  <ul>
+    <li>第一章</li>
+    <ul>
+      <li>第一節</li>
+    </ul>
+    <li>我是清單</li>
+    <li>我是清單</li>
+  </ul>
+
+
+</body>
+</html>
