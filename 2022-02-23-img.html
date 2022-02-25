@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 圖片路徑設定 -->
+    <img src="起手勢-NoDatabaseError 2.png" alt="">
+
+    <!-- 讓網頁獨立解讀圖片-語意更加明確 -->
+    <!-- 比 div 區格區域更明顯 -->
+    <figure>
+        <img src="https://picsum.photos/300/300/?random=10" alt="">
+        <figcaption>
+            <h3>title</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis perspiciatis delectus nulla itaque neque quisquam eaque porro aliquam autem nisi.</p>
+        </figcaption>
+    </figure>
+
+    <!-- RWD 好用 -->
+    <!-- 不同解析度，產生不同的視覺外觀 -->
+    <!-- 條件確定，才讀取圖片，只下載需要的那張圖片 -->
+    <picture>
+        <!-- 由大寫到小 -->
+        <source srcset="">
+        <source>
+        <!-- 預設圖片 -->
+        <img src="https://picsum.photos/300/200/?random=3" alt="">
+    </picture>
+
+    <!-- 設計網站時，由小寫到大 -->
+</body>
+</html>
