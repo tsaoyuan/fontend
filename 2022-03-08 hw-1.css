@@ -32,6 +32,9 @@ section.tool article{
   width: 320px;
   margin: 1px;
 }
+h3{
+  text-transform: uppercase;
+}
 
 section.tool article.reverse .visit{
   display: flex;
