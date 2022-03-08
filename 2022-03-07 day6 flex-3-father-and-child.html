@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex 父層與子層</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .wrap{
+      width: 300px;
+      height: 300px;
+      margin: 10px auto;
+      background-color: #ccc;
+      display: flex;
+      justify-content: center;
+    }
+    .box-child{
+      border: steelblue 10px dashed;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>wrap</h1>
+    <div class="box-child">
+      box-child
+    </div>
+  </div>
+</body>
+</html>
