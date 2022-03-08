@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>align-content</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    .wrap{
+      width: 960px;
+      height: 500px;
+      margin: auto;
+      display: flex;
+      /* flex-wrap: wrap; */
+      background-color: #555;
+      align-content: end;
+    }
+    .item{
+      width: 300px;
+      margin: 10px;
+      background-color: #ccc;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="item">1AB</div>
+    <div class="item">2AB</div>
+    <div class="item">3AB</div>
+
+  </div>
+</body>
+</html>
