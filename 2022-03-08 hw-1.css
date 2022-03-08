@@ -7,13 +7,12 @@
   width: 960px;
   margin-left: auto;
   margin-right: auto;
-  border: 1px #000 solid;
 }
 section.title{
   margin-left: auto;
   margin-right: auto;
-  border: 1px #050 solid;
   text-align: center;
+  margin-bottom: 40px;
 }
 
 span{
@@ -26,13 +25,11 @@ p{
 section.tool{
   margin-left: auto;
   margin-right: auto;
-  border: 1px #009 solid;
   display: flex;
 }
 
 section.tool article{
   width: 320px;
-  border: #f00 solid 1px;
   margin: 1px;
 }
 
@@ -41,7 +38,6 @@ section.tool article.reverse .visit{
   flex-direction: row-reverse;
   margin-top: 20px;
   margin-bottom: 20px;
-  border: 1px pink solid;
 }
 
 section.tool article.reverse .save{
@@ -49,7 +45,6 @@ section.tool article.reverse .save{
   flex-direction: row-reverse;
   margin-top: 20px;
   margin-bottom: 20px;
-  border: 1px pink solid;
 }
 
 section.tool article.reverse .explore{
@@ -57,7 +52,6 @@ section.tool article.reverse .explore{
   flex-direction: row-reverse;
   margin-top: 20px;
   margin-bottom: 20px;
-  border: 1px pink solid;
 }
 
 section.tool article.reverse img{
@@ -78,19 +72,16 @@ section.tool article.obverse .organize{
   display: flex;
   margin-top: 20px;
   margin-bottom: 20px;
-  border: 1px pink solid;
 }
 section.tool article.obverse .communicate{
   display: flex;
   margin-top: 20px;
   margin-bottom: 20px;
-  border: 1px pink solid;
 }
 section.tool article.obverse .share{
   display: flex;
   margin-top: 20px;
   margin-bottom: 20px;
-  border: 1px pink solid;
 }
 
 section.tool article.obverse img{
