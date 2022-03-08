@@ -3,3 +3,103 @@
   padding: 0;
   list-style: none;
 }
+.wrap{
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px #000 solid;
+}
+section.title{
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px #050 solid;
+  text-align: center;
+}
+
+span{
+  color: #999;
+}
+p{
+  color: #ccc;
+}
+
+section.tool{
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px #009 solid;
+  display: flex;
+}
+
+section.tool article{
+  width: 320px;
+  border: #f00 solid 1px;
+  margin: 1px;
+}
+
+section.tool article.reverse .visit{
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 1px pink solid;
+}
+
+section.tool article.reverse .save{
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 1px pink solid;
+}
+
+section.tool article.reverse .explore{
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 1px pink solid;
+}
+
+section.tool article.reverse img{
+  border-radius: 50%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+
+article.img{
+  width: 100%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+section.tool article.obverse .organize{
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 1px pink solid;
+}
+section.tool article.obverse .communicate{
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 1px pink solid;
+}
+section.tool article.obverse .share{
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 1px pink solid;
+}
+
+section.tool article.obverse img{
+  border-radius: 50%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+
+
+
