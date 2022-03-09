@@ -18,16 +18,18 @@
       display: flex;
       flex-wrap: wrap;
     }
+    /* 使用 flex-grow 做到 單列均分 */
     .child{
-      width: 160px;
+      width: 0px;
       height: 160px;
+      flex-grow: 1;
       background-color: #fa0;
       margin: 2px;
       font-size: 18px;
     }
     /* 專門用來檢視 align-items 的差異 */
     .child:first-child{
-      height: 210px;
+      /* height: 210px; */
     }
     /* .child2{
       align-self: center;
@@ -41,7 +43,7 @@
 
     /* 伸展值 flex-grow */
     /* flex-grow > width, height */
-    .child1{
+    /* .child1{
       flex-grow: 2;
     }
     .child2{
@@ -50,7 +52,7 @@
     }
     .child3{
       flex-grow: 1;
-    }
+    } */
   </style>
 </head>
 <body>
