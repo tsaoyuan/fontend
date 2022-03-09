@@ -29,14 +29,27 @@
     .child:first-child{
       height: 210px;
     }
-    .child2{
+    /* .child2{
       align-self: center;
-    }
+    } */
 
     /* 屬性值優先權: Flex-basis > width, height */
-    .child1{
+    /* .child1{
       flex-basis: 50px;
       width: 160px;
+    } */
+
+    /* 伸展值 flex-grow */
+    /* flex-grow > width, height */
+    .child1{
+      flex-grow: 2;
+    }
+    .child2{
+      flex-grow: 1;
+      
+    }
+    .child3{
+      flex-grow: 1;
     }
   </style>
 </head>
@@ -45,8 +58,6 @@
     <div class="child child1">1 AB中文</div>
     <div class="child child2">2 AB中文</div>
     <div class="child child3">3 AB中文</div>
-    <div class="child child4">4 AB中文</div>
-    <div class="child child5">5 AB中文</div>
   </div>
 </body>
 </html>
