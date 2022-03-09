@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>flex-self</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    .father{
+      width: 600px;
+      height: 600px;
+      background-color: #ccc;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .child{
+      width: 160px;
+      height: 160px;
+      background-color: #fa0;
+      margin: 2px;
+      font-size: 18px;
+    }
+    /* 專門用來檢視 align-items 的差異 */
+    .child:first-child{
+      height: 210px;
+    }
+    .child2{
+      align-self: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="father">
+    <div class="child child1">1 AB中文</div>
+    <div class="child child2">2 AB中文</div>
+    <div class="child child3">3 AB中文</div>
+    <div class="child child4">4 AB中文</div>
+    <div class="child child5">5 AB中文</div>
+  </div>
+</body>
+</html>
