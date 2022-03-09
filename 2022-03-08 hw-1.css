@@ -36,28 +36,14 @@ h3{
   text-transform: uppercase;
 }
 
-section.tool article.reverse .visit{
+section.tool article.reverse .visit, .save, .explore{
   display: flex;
   flex-direction: row-reverse;
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
-section.tool article.reverse .save{
-  display: flex;
-  flex-direction: row-reverse;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-section.tool article.reverse .explore{
-  display: flex;
-  flex-direction: row-reverse;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-section.tool article.reverse img{
+section.tool article.reverse img, article.obverse img{
   border-radius: 50%;
   margin-left: 10px;
   margin-right: 10px;
@@ -71,28 +57,12 @@ article.img{
   vertical-align: middle;
 }
 
-section.tool article.obverse .organize{
-  display: flex;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-section.tool article.obverse .communicate{
-  display: flex;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-section.tool article.obverse .share{
+section.tool article.obverse .organize, .communicate, .share{
   display: flex;
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
-section.tool article.obverse img{
-  border-radius: 50%;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-top: 10px;
-}
 
 
 
