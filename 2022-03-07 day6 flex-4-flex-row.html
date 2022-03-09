@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>彈性列空間</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    .father{
+      width: 600px;
+      height: 600px;
+      background-color: #ccc;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .child{
+      width: 160px;
+      height: 160px;
+      background-color: #fa0;
+      margin: 2px;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <div class="father">
+    <div class="child">1 AB中文</div>
+    <div class="child">2 AB中文</div>
+    <div class="child">3 AB中文</div>
+    <div class="child">4 AB中文</div>
+    <div class="child">5 AB中文</div>
+  </div>
+</body>
+</html>

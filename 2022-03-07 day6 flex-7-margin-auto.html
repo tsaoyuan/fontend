@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>margin 分配剩餘空間</title>
+  <style>
+    /* 使用 flex 特性，讓子物件吃到父層空間的高度，便能調整margin-top,
+      margin-bottom ，達成垂直居中*/
+    *{
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    .father{
+      width: 300px;
+      height: 300px;
+      margin: auto;
+      margin-bottom: 10px;
+      background-color: #aaa;
+    }
+    .child{
+      width: 100px;
+      height: 100px;
+      background-color: #fa0;
+      margin-left: auto;
+      margin-right: auto;
+      /* 擁有 display: flex; ，才有反應：  */
+      /* 在 flex 狀態下，用 margin 就可以水平垂直居中 */
+      /* 主因，子物件吃到父層高度 */
+      margin-top: auto;
+      margin-bottom: auto;
+    }
+    .flex{
+      display: flex;
+    }
+  </style>
+</head>
+<body>
+  <div class="father">
+    <div class="child">
+      1AB中文
+    </div>
+  </div>
+
+  <div class="father flex">
+    <div class="child">
+      1AB中文
+    </div>
+  </div>
+</body>
+</html>
