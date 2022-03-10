@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>疊圖疊疊樂</title>
+  <!-- 使用relative 玩疊疊樂，紅版和灰版使用 inline-block 讓兩區塊併排，再使用relative 調整上右下左，像是在排列板塊的座標位置 -->
   <style>
     *{
       margin: 0;
@@ -41,17 +42,22 @@
       left: -160px;
       top: -50px;
     }
-    /* .yellow{
-      display: inline-block;
-      background-color: yellow;
-    } */
+    .yellow{
+      width: 30px;
+      height: 20px;
+      background-color: rgb(234, 234, 62);
+      position: absolute;
+      right: -10px;
+      bottom: 40%;
+    }
   </style>
 </head>
 <body>
   <div class="box gray"></div>
   <div class="box red"></div>
-  <div class="box blue"></div>
+  <div class="box blue">
+    <div class="yellow"></div>
+  </div>
   <div class="box green"></div>
-  <!-- <div class="box yellow"></div> -->
 </body>
 </html>
