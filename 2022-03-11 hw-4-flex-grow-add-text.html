@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    .wrap{
+      width: 500px;
+      border: springgreen 1px solid;
+      padding: 10px;
+    }
+    .title{
+      display: flex;
+      flex-wrap: wrap;
+      border: tomato 1px solid;
+    }
+    .h3{
+      flex-grow: 1;
+
+    }
+    .line{
+      margin-top: auto;
+      margin-bottom: auto;
+      margin-right: 10px;
+      margin-left: 10px;
+      border-top: 1px #000 solid;
+      flex-grow: 3;
+    }
+    .descript{
+      border: peru 1px solid;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="title">
+      <h3>玉藻前</h3>
+      <div class="line"></div>
+    </div>
+    <div class="descript">
+      <h4>靈擊</h4>
+      <p>玉藻前使用靈氣攻擊目標，造成玉藻前攻擊100%的傷害，並有10%（+效果命中）的概率使目標混亂1回合。</p>
+      <h4>狐火</h4>
+      <p>玉藻前凝聚狐火，並對目標造成自身攻擊263%的傷害，若目標生命值高於80%，則傷害減少15%。</p>
+      <h4>墮天</h4>
+      <p>玉藻前爆發自身力量，對全體敵方單位造成攻擊131%的傷害，若目標生命低於50%，則傷害減少15%。</p>
+    </div>
+  </div>
+</body>
+</html>
