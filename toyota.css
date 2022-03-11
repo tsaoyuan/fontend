@@ -87,3 +87,24 @@ h2{
   border-top: 1px #000 solid;
   flex-grow: 3;
 }
+
+.icon{
+      width: 30px;
+      height: 20px;
+      background-color: #f00;
+      position: absolute;
+      right: -15px;
+      bottom: 40%;
+}
+.triangle{
+      height: 0;
+      border-top: transparent 6px solid;
+      border-left: #fff 12px solid;
+      border-bottom: transparent 6px solid;
+}
+.rel{
+      width: 0;
+      position: relative;
+      top: 20%;
+      margin-left: 35%;
+}
