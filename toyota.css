@@ -8,103 +8,21 @@
   margin: auto;
   border: orange 1px solid;
 }
-.box{
-      position: relative;
-      /* margin-top: 10px; */
-      margin-right: auto;
-      /* margin-bottom: 10px; */
-      margin-left: auto;
-      border: springgreen 5px solid;
-}
+
 .img{
-  position: relative;
-  width: 600px;
-  height: 400px;
+  width: 700px;
+  height: 525px;
 }
 .point{
-      display: inline-block;
-      width: 300px;
-      height: 300px;
-      margin: 20px auto;
-      z-index: 1;
-      bottom: -228px;
-      left: 40px;
-}
-h2{
-  width: 300px;
-  height: 100px;
-  line-height:100px;
-  box-sizing: border-box;
-  background-color: #f00;
-  font-size: 48px;
-  text-align: center;
+      background-color: #fa0;
+      width: 350px;
+      height: 525px;
 }
 
-.slg{
-  display: block;
-  font-weight: 700;
-  font-size: 24px;
-}
-
-.point p{
-  height: 200px;
-  box-sizing: border-box;
-  background-color: #000;
-  padding: 10px;
-  color: #fff;
-}
 .bgc{
-      display: inline-block;
-      width: 300px;
-      height: 300px;
+      width: 440px;
+      height: 350px;
       background-color: #aaa;
-      left: 300px;
-      bottom: -320px;
 }
 
-.descript{
-  background-color: #ddd;
-  width: 500px;
-  padding: 10px;
-  top: -30px;
-  left: -160px;
-  z-index: 1;
-}
-.title{
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 5px;
-  
-}
-.h3{
-  flex-grow: 1;
-}
-.line{
-  margin-top: auto;
-  margin-bottom: auto;
-  margin-right: 10px;
-  margin-left: 10px;
-  border-top: 1px #000 solid;
-  flex-grow: 3;
-}
 
-.icon{
-      width: 30px;
-      height: 20px;
-      background-color: #f00;
-      position: absolute;
-      right: -15px;
-      bottom: 40%;
-}
-.triangle{
-      height: 0;
-      border-top: transparent 6px solid;
-      border-left: #fff 12px solid;
-      border-bottom: transparent 6px solid;
-}
-.rel{
-      width: 0;
-      position: relative;
-      top: 20%;
-      margin-left: 35%;
-}
