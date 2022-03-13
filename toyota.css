@@ -19,7 +19,7 @@
 .img{
   width: 700px;
   height: 525px;
-  opacity: 0.5;
+  opacity: .5;
   position: absolute;
   border: #0f0 5px dashed;
   top: 0;
@@ -27,6 +27,7 @@
   bottom: 0;
   right: 0;
   margin: auto;
+  z-index: 0;
 }
 .point{
       /* border: springgreen 10px dashed; */
@@ -38,6 +39,7 @@
       /* top: 3%; */
       /* display: flex; */
       /* flex-direction: column; */
+      z-index: 1;
 }
 .point h2{
   /* height: 175px; */
@@ -57,9 +59,10 @@
       /* position: absolute; */
       /* top: 10%; */
       /* right: 25%; */
-      /* position: relative; */
-      /* top: 10%; */
-      /* left: 10%; */
+      position: relative;
+      top: -120%;
+      right: -50%;
+      z-index: -1;
     }
 
 
