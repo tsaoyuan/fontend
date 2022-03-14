@@ -35,19 +35,30 @@
   height: 525px;
   position: relative;
   top: 85px;
-  display: flex;
-  flex-direction: column;
+  /* display: flex; */
+  /* flex-direction: column; */
   z-index: 1;
   opacity: .1;
 }
 .point h2{
-  flex-grow: 1;
-  background-color: #bbb;
+  /* flex-grow: 1; */
+  height: 175px;
+  background-color: #f00;
+  font-size: 64px;
+  line-height: 175px;
+  text-align: center;
+}
+.point .slg{
+  display: block;
+  font-weight: 700;
+  font-size: 24px;
 }
 .point p{
-  flex-grow: 2;
-  background-color: #f00;
-  opacity: .1;
+  /* flex-grow: 2; */
+  height: 350px;
+  background-color: #000;
+  padding: 10px;
+  color: #fff;
 }
 
 .bgc{
