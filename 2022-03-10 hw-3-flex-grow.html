@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>flxe-grow</title>
+  <!-- flxe 屬性，放置子層，分紅的概念 -->
+  <style>
+    *{
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+    .wrap{
+      width: 100px;
+      height: 300px;
+      margin: 20px auto;
+      border: olive 2px solid;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .box1{
+      flex-grow: 1;
+      background-color: #fa0;
+    }
+    .box2{
+      flex-grow: 4;
+      background-color: #0ff;
+    }
+    h2{
+      font-size: 48px;
+    }
+    .slg{
+      display: block;
+      font-weight: 700;
+      font-size: 24px;
+    }
+    .text{
+      width: 300px;
+      height: 300px;
+      margin: 20px auto;
+      border: olive 2px solid;
+      display: flex;
+      flex-direction: column;
+    }
+    h2{
+      flex-grow: 1;
+      background-color: #f00;
+    }
+    .text p{
+      flex-grow: 2;
+      background-color: #000;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="box1"></div>
+    <div class="box2"></div>
+  </div>
+  <div class="text">
+    <h2>01 操控樂趣</h2>
+    <p> <span class="slg">人人滿意的駕駛體驗</span> 你有各種，優點幾次這些共享版這一點，為何沒有任何太多來自驚人有了信箱真實上升賺錢，刺激姑娘，所在錯誤忍不住驚訝。</p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>製作三角形</title>
+  <style>
+    *{
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+    body{
+      border: violet 5px solid;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+    .box{
+      width: 50px;
+      height: 50px;
+      margin: 10px auto;
+      /* margin-top: auto; */
+    }
+    .box1{
+      border: yellowgreen 5px solid;
+    }
+    .box2{
+      border-top: tomato 50px solid;
+      border-right: turquoise 50px solid;
+      border-bottom: wheat 50px solid;
+      border-left: #000 50px solid;
+    }
+    .box3{
+      border-top: transparent 50px solid;
+      border-right: turquoise 50px solid;
+      border-bottom: transparent 50px solid;
+    }
+    .box4{
+      height: 0;
+      border-top: transparent 50px solid;
+      border-right: turquoise 50px solid;
+      border-bottom: transparent 50px solid;
+    }
+    .box5{
+      background-color: #f00;
+      width: 110px;
+      height: 60px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-content: space-around;
+    }
+    .triangle{
+      height: 0;
+      border-top: transparent 20px solid;
+      border-left: #fff 50px solid;
+      border-bottom: transparent 20px solid;
+    }
+    .box6{
+      background-color: #f00;
+      width: 110px;
+      height: 60px;
+    }
+    .rel{
+      width: 0;
+      position: relative;
+      top: 20%;
+      margin-left: 35%;
+    }
+
+    .abs{
+      width: 0;
+      position: absolute;
+      margin-left: 30px;
+      margin-top: 10px;
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="box box1"></div>
+  <div class="box box2"></div>
+  <div class="box box3"></div>
+  <div class="box box4"></div>
+  <div class="box box5">
+    <div class="triangle"></div>
+  </div>
+  <div class="box box6">
+    <div class="triangle rel"></div>
+  </div>
+
+  <div class="box box6">
+    <div class="triangle abs"></div>
+  </div>
+</body>
+</html>

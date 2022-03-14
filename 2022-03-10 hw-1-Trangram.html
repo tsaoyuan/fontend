@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>疊圖疊疊樂</title>
+  <!-- 使用relative 玩疊疊樂，紅版和灰版使用 inline-block 讓兩區塊併排，再使用relative 調整上右下左，像是在排列板塊的座標位置 -->
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    .box{
+      width: 200px;
+      height: 200px;
+      margin-top: 10px;
+      position: relative;
+      margin-right: auto;
+      margin-left: auto;
+      margin-bottom: 10px;
+      border: springgreen 5px solid;
+    }
+    .gray{
+      display: inline-block;
+      background-color: #aaa;
+      left: 500px;
+      top: 100px;
+    }
+    .red{
+      display: inline-block;
+      background-color: #f00;
+      left: 600px;
+      bottom: -100px;
+    }
+    .blue{
+      background-color: blue;
+    }
+    .green{
+      background-color: green;
+      left: -160px;
+      top: -50px;
+    }
+    .yellow{
+      width: 30px;
+      height: 20px;
+      background-color: rgb(234, 234, 62);
+      position: absolute;
+      right: -10px;
+      bottom: 40%;
+    }
+  </style>
+</head>
+<body>
+  <div class="box gray"></div>
+  <div class="box red"></div>
+  <div class="box blue">
+    <div class="yellow"></div>
+  </div>
+  <div class="box green"></div>
+</body>
+</html>
