@@ -7,7 +7,7 @@
   width: 960px;
   height: 1000px;
   margin: auto;
-  border: orange 1px solid;
+  border: orange 3px solid;
   display: flex;
   flex-wrap: wrap;
   /* justify-content: space-around; */
@@ -34,7 +34,7 @@
   width: 350px;
   height: 525px;
   position: relative;
-  top: 35px;
+  top: 100px;
   display: flex;
   flex-direction: column;
   z-index: 1;
@@ -51,14 +51,40 @@
 }
 
 .bgc{
-      width: 440px;
-      height: 350px;
-      background-color: #aaa;
-      position: relative;
-      top: -120%;
-      right: -50%;
-      z-index: -1;
+  width: 440px;
+  height: 350px;
+  background-color: #aaa;
+  position: relative;
+  top: -120%;
+  right: -50%;
+  z-index: -1;
+}
+.descript{
+  position: relative;
+  /* .descript 高，繼承 wrap 的高 */
+  /* wrap 的 height = 1000px */
+  /* 折衷-把高設為固定，奇數列-3，偶數列-2 */
+  height: 500px;
+  background-color: #ddd;
+  width: 560px;
+}
+    /* .title{
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 5px;
+      
     }
+    .h3{
+      flex-grow: 1;
+    }
+    .line{
+      margin-top: auto;
+      margin-bottom: auto;
+      margin-right: 10px;
+      margin-left: 10px;
+      border-top: 1px #000 solid;
+      flex-grow: 3;
+    } */
 
 
 
