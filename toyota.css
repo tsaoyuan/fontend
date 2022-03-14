@@ -10,6 +10,7 @@
   border: orange 3px solid;
   display: flex;
   flex-wrap: wrap;
+  position: relative;
 }
 .img{
   width: 700px;
@@ -33,14 +34,14 @@
 .point h2{
   height: 175px;
   background-color: #f00;
-  font-size: 64px;
+  font-size: 60px;
   line-height: 175px;
   text-align: center;
 }
 .point .slg{
   display: block;
   font-weight: 700;
-  font-size: 32px;
+  font-size: 28px;
   line-height: 48px;
 }
 .point p{
