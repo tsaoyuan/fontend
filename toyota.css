@@ -7,7 +7,7 @@
   width: 960px;
   height: 1000px;
   margin: auto;
-  border: orange 3px solid;
+  /* border: orange 3px solid; */
   display: flex;
   flex-wrap: wrap;
   position: relative;
@@ -29,7 +29,7 @@
   z-index: 0;
 }
 .point{
-  background-color: #fa0;
+  /* background-color: #fa0; */
   width: 350px;
   height: 525px;
   position: relative;
