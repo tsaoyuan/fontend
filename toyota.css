@@ -10,17 +10,11 @@
   border: orange 3px solid;
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: space-around; */
-  /* align-content: flex-start; */
-  /* align-items: center; */
-  /* flex-direction: row-reverse; */
 }
 .img{
   width: 700px;
   height: 525px;
-  opacity: .5;
   position: absolute;
-  /* border: #0f0 5px dashed; */
   top: 0;
   left: 0;
   bottom: 0;
@@ -29,19 +23,14 @@
   z-index: 0;
 }
 .point{
-  /* border: springgreen 10px dashed; */
   background-color: #fa0;
   width: 350px;
   height: 525px;
   position: relative;
   top: 85px;
-  /* display: flex; */
-  /* flex-direction: column; */
   z-index: 1;
-  opacity: .1;
 }
 .point h2{
-  /* flex-grow: 1; */
   height: 175px;
   background-color: #f00;
   font-size: 64px;
@@ -51,11 +40,12 @@
 .point .slg{
   display: block;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 32px;
+  line-height: 48px;
 }
 .point p{
-  /* flex-grow: 2; */
   height: 350px;
+  font-size: 24px;
   background-color: #000;
   padding: 10px;
   color: #fff;
