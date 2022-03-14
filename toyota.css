@@ -41,12 +41,10 @@
   opacity: .1;
 }
 .point h2{
-  /* height: 175px; */
   flex-grow: 1;
   background-color: #bbb;
 }
 .point p{
-  /* height: 350px; */
   flex-grow: 2;
   background-color: #f00;
   opacity: .1;
@@ -102,8 +100,6 @@
   height: 40px;
   background-color: #f00;
   position: relative;
-  /* left: 82%; */
-  /* left: -82%; */
   right: -82%;
   bottom: 20%;
 
