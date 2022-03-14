@@ -64,30 +64,34 @@
   /* .descript 高，繼承 wrap 的高 */
   /* wrap 的 height = 1000px */
   /* 折衷-把高設為固定，奇數列-3，偶數列-2 */
-  height: 500px;
+  height: 300px;
   background-color: #ddd;
   width: 560px;
   
   margin-top: 70%;
   margin-left: -30%;
 }
-    /* .title{
-      display: flex;
-      flex-wrap: wrap;
-      margin-bottom: 5px;
-      
-    }
-    .h3{
-      flex-grow: 1;
-    }
-    .line{
-      margin-top: auto;
-      margin-bottom: auto;
-      margin-right: 10px;
-      margin-left: 10px;
-      border-top: 1px #000 solid;
-      flex-grow: 3;
-    } */
+
+.title{
+  display: flex;
+  line-height: 48px;
+  border: deeppink 1px dashed;
+  padding: 10px;
+}
+.title p{
+  font-size: 24px;
+}
+
+.line{
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 10px;
+  margin-left: 10px;
+  border-top: 1px #000 solid;
+  flex-grow: 1;
+} 
+
+    
 
 
 
