@@ -12,6 +12,11 @@
   flex-wrap: wrap;
   position: relative;
 }
+
+.w_rev{
+  flex-direction: row-reverse;
+}
+
 .img{
   width: 700px;
   height: 525px;
@@ -28,7 +33,7 @@
   width: 350px;
   height: 525px;
   position: relative;
-  top: 85px;
+  top: 60px;
   z-index: 1;
 }
 .point h2{
@@ -73,6 +78,10 @@
   top: 70%;
   left: -30%;
 }
+.des_rev{
+  left: 30%;
+  height: 200px;
+}
 
 .title{
   display: flex;
@@ -106,6 +115,10 @@
   bottom: 20%;
 
   z-index: 1;
+}
+
+.i_rev{
+  right: 82%;
 }
 .triangle{
   height: 0;
