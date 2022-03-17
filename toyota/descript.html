@@ -15,6 +15,9 @@
       margin: 0 auto;
       padding: 10px;
       line-height: 30px;
+      /*  */
+      display: flex;
+      flex-wrap: wrap;
     }
     .slg{
       color: brown;
@@ -22,6 +25,10 @@
       padding: 10px;
       display: flex;
       align-items: center;
+      /* 列轉欄，slg 要將內文擠下去，使用width: 100% */
+      width: 100%;
+      flex-grow: 1;
+
     }
     .slg::after{
       content: "";
@@ -33,6 +40,8 @@
     }
     .text .singer{
       margin-bottom: 20px;
+
+      width: 200px;
     }
     .text .singer h2{
       display: inline-block;
