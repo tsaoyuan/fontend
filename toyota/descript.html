@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- Pseudo-elements, css cosmetic content  -->
+  <!-- css 偽元素：  ::before and ::after -->
+  <link rel="stylesheet" href="../reset.css">
+  <style>
+    .text{
+      width: 600px;
+      background-color: #fa0;
+      font-size: 36px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .text::after{
+      content: "<- 初";
+      display: inline-block;
+      color: #f00;
+      background-color: #000;
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="text">
+    Here is some generic content
+  </div>
+</body>
+</html>
