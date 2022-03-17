@@ -39,16 +39,19 @@
     }
     .text .singer p{
       font-size: 18px;
-      text-indent: 1em;
+      padding-left: 1.5em;
       position: relative;
     }
     /* 偽選取器-項目符號-調整位置 */
     .text p::before{
-      display: inline-block;
-      content: "X";
-      padding-right: 5px;
+      content: "";
+      width: 8px;
+      height: 8px;
+      background-color: #a00;
       position: absolute;
-      left: -15px;
+      left: 10px;
+      top: 0.5em;
+      border-radius: 50%;
     }
     /* 偽選取器-基本操作 */
     /* .text::after{
