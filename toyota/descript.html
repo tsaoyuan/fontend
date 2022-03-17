@@ -10,17 +10,24 @@
   <link rel="stylesheet" href="../reset.css">
   <style>
     .text{
-      width: 600px;
+      width: 960px;
       background-color: #fa0;
       font-size: 36px;
       margin: 0 auto;
       text-align: center;
+      line-height: 48px;
     }
     .text::after{
       content: "<- 初";
       display: inline-block;
       color: #f00;
       background-color: #000;
+    }
+    .text::before{
+      content: "";
+      display: inline-block;
+      padding: 10px;
+      background-color: #f00;
     }
     
   </style>
