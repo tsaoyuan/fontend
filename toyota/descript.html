@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- Pseudo-elements, css cosmetic content  -->
+  <!-- css 偽元素：  ::before and ::after -->
+  <link rel="stylesheet" href="../reset.css">
+  <style>
+    .text{
+      width: 600px;
+      background-color: #fa0;
+      margin: 0 auto;
+      padding: 10px;
+      line-height: 30px;
+      /*  */
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .slg{
+      color: brown;
+      font-size: 24px;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      /* 列轉欄，slg 要將內文擠下去，使用width: 100% */
+      width: 100%;
+      flex-grow: 1;
+
+    }
+    .slg::after{
+      content: "";
+      flex-grow: 1;
+      border-bottom: brown 1px solid;
+      /* margin-top: auto;
+      margin-bottom: auto; */
+      margin-left: 20px;
+    }
+    .text .singer{
+      margin-bottom: 20px;
+
+      width: 200px;
+    }
+    .text .singer h2{
+      display: inline-block;
+      padding: 2px;
+      font-size: 24px;
+      background-color: #fff;
+    }
+    .text .singer p{
+      font-size: 18px;
+      padding-left: 1.5em;
+      position: relative;
+    }
+    /* 偽選取器-項目符號-調整位置 */
+    .text p::before{
+      content: "";
+      width: 8px;
+      height: 8px;
+      background-color: #a00;
+      position: absolute;
+      left: 10px;
+      top: 0.5em;
+      border-radius: 50%;
+    }
+    /* 偽選取器-基本操作 */
+    /* .text::after{
+      content: "<- 初";
+      display: inline-block;
+      color: #f00;
+      background-color: #000;
+    }
+    .text::before{
+      content: "";
+      display: inline-block;
+      padding: 10px;
+      background-color: #f00;
+    } */
+    
+  </style>
+</head>
+<body>
+  <div class="text">
+    <div class="slg">超級偶像杯</div>
+    <div class="singer">
+      <h2>蘇珊大嬸</h2>
+      <p>維修細胞觀點在這個小時大戰，西安見過成本等待興趣臺灣民眾網際高興是怎麼便是，考。</p>
+      <p>維修細胞觀點在這個小時大戰，西安見過成本等待興趣臺灣民眾網際高興是怎麼便是，考。</p>
+      <p>維修細胞觀點在這個小時大戰，西安見過成本等待興趣臺灣民眾網際高興是怎麼便是，考。</p>
+    </div>
+
+    <div class="singer">
+      <h2>湯姆大叔</h2>
+      <p>維修細胞觀點在這個小時大戰，西安見過成本等待興趣臺灣民眾網際高興是怎麼便是，考。</p>
+    </div>
+    
+    <div class="singer">
+      <h2>捷克</h2>
+      <p>維修細胞觀點在這個小時大戰，西安見過成本等待興趣臺灣民眾網際高興是怎麼便是，考。</p>
+    </div>
+  </div>
+</body>
+</html>
