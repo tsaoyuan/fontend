@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>nav</title>
+  <link rel="stylesheet" href="../reset.css">
+  <style>
+    a{
+      text-decoration: none;
+      color: black;
+    }
+    .navBar{
+      background-color: #fa0;
+      margin: 10px auto;
+      font-size: 24px;
+      width: 960px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      text-align: center;
+      align-items: center;
+    }
+    .brand{
+      border: 1px solid brown;
+      flex-grow: 1;
+    }
+    .navlist{
+      flex-grow: 4;
+      margin: 10px;
+    }
+    .navlist ul{
+      border: 1px green solid;
+      display: flex;
+      justify-content: space-between;
+    }
+    .friendly{
+      flex-grow: 1;
+      border: 1px solid brown;
+    }
+   
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <!-- 導覽列 -->
+    <nav class="navBar">
+      <div class="brand">
+        <h2><a href="#">tsao</a></h2> 
+      </div>
+      <div class="navlist">
+        <ul>
+          <li><a href="#">旅行者</a></li>
+          <li><a href="#">照相</a></li>
+          <li><a href="#">企業介紹</a></li>
+          <li><a href="#">特輯</a></li>
+          <li><a href="#">企業</a></li>
+        </ul>
+      </div>
+      <div class="friendly"><a href="#">友站連結</a></div>
+    </nav>
+
+  </div>
+</body>
+</html>
