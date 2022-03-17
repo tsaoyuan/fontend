@@ -10,14 +10,32 @@
   <link rel="stylesheet" href="../reset.css">
   <style>
     .text{
-      width: 960px;
+      width: 600px;
       background-color: #fa0;
-      font-size: 36px;
       margin: 0 auto;
-      text-align: center;
-      line-height: 48px;
+      padding: 10px;
+      line-height: 30px;
     }
-    .text::after{
+    .text h2{
+      display: inline-block;
+      padding: 2px;
+      font-size: 24px;
+      background-color: #fff;
+    }
+    .text p{
+      font-size: 18px;
+      text-indent: 1em;
+      position: relative;
+    }
+    .text p::before{
+      display: inline-block;
+      content: "X";
+      padding-right: 5px;
+      position: absolute;
+      left: -15px;
+    }
+    /* 偽選取器-基本操作 */
+    /* .text::after{
       content: "<- 初";
       display: inline-block;
       color: #f00;
@@ -28,13 +46,18 @@
       display: inline-block;
       padding: 10px;
       background-color: #f00;
-    }
+    } */
     
   </style>
 </head>
 <body>
   <div class="text">
-    Here is some generic content
+    <h2>蘇珊大嬸</h2>
+    <p>維修細胞觀點在這個小時大戰，西安見過成本等待興趣臺灣民眾網際高興是怎麼便是，考。</p>
+    <h2>湯姆大叔</h2>
+    <p>維修細胞觀點在這個小時大戰，西安見過成本等待興趣臺灣民眾網際高興是怎麼便是，考。</p>
+    <h2>捷克</h2>
+    <p>維修細胞觀點在這個小時大戰，西安見過成本等待興趣臺灣民眾網際高興是怎麼便是，考。</p>
   </div>
 </body>
 </html>
