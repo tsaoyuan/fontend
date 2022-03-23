@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>box-sizing</title>
+  <title>Large box use float</title>
   <link rel="stylesheet" href="../reset.css">
   <style>
     .wrap{
@@ -30,12 +30,14 @@
       padding: 10px 0;
     }
     .text-area{
-      background-color: #aaa;
+      background-color: #ccc;
     }
-    
-    .text-area .clear-fix{
+    .text-area::after{
+      content: '';
+      display: block;
       clear: both;
     }
+    
     .text-area .bold, .text-area .thin, .text-area .date{
       padding: 10px 0;
       width: calc(50% - 10px);
@@ -67,7 +69,6 @@
           UTme!“一起在夏威夷”系列在優衣庫阿拉莫阿納店與當地藝術家和公司合作啟動了 UTme!“一起”
           <span class="date">2022/01/28</span>
         </p>
-        <div class="clear-fix"></div>
       </div>
     </a>
 
