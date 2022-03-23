@@ -37,8 +37,20 @@
     .date{
       display: block;
     }
+    .small-box:nth-child(odd){
+      background-color: #5ff;
+      float: left;
+    }
+    .small-box:nth-child(even){
+      background-color: #fa0;
+      float: right;
+    }
 
-
+    .wrap::after{
+      content:'';
+      display: block;
+      clear: both;
+    }
   </style>
 </head>
 <body>
