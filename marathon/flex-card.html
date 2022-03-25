@@ -14,12 +14,6 @@
       padding: 10px;
       width: 934px;
     }
-    .card_trips .container{
-      text-decoration: none;
-      display: block;
-      width: 467px;
-    }
-    
     .large_box, .small_card{
       box-sizing: border-box;
       background-color: #99f;
@@ -29,8 +23,23 @@
       background-color: #ccc;
     }
     .small_box{
-      width: 50%;
+      width: calc(50% - 10px) ;
     }
+
+    .card_trips .large_box .container{
+      text-decoration: none;
+      display: block;
+      width: 467px;
+    }
+
+    .card_trips .small_box .container{
+      text-decoration: none;
+      display: block;
+      width: 100%;
+    }
+    
+    
+    
     /* 圖片 */
     .large_box .container img{
       padding: 10px 0;
@@ -39,7 +48,7 @@
     }
     .small_box .container img{
       padding: 10px 0;
-      width: 50%;
+      width: 100%;
       vertical-align: middle;
     }
     /* 文字 */
@@ -60,11 +69,12 @@
     /* 小圖 */
     .small_box .text_area .bold, .small_box .text_area .date{
       padding: 10px 0;
-      width: calc(50% - 10px);
+      width: 100%;
     }
     
-    .small_box{
-      border: steelblue 2px solid;
+    .small_card{
+      display: flex;
+      justify-content: space-between;
     }
     
     
