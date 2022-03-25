@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>small box use float</title>
+  <link rel="stylesheet" href="../reset.css">
+  <style>
+    .wrap{
+      margin: 10px auto;
+      /* 500 = 10*2 + 3*2 + 474 */
+      border: green 3px solid;
+      padding: 10px;
+      width: 474px;
+    }
+    .small-box{
+      width: calc(50% - 10px);
+    }
+    .container{
+      display: block;
+      width: 100%;
+      text-decoration: none;
+    }
+    .container img{
+      width: 100%;
+      padding: 10px 0;
+      vertical-align: middle;
+    }
+    .container .text-area {
+      width: 100%;
+      background-color: #ccc;
+    }
+    .text-area .bold, .text-area .date{
+      padding: 10px 0;
+    }
+    .date{
+      display: block;
+    }
+    .small-box:nth-child(odd){
+      background-color: #5ff;
+      float: left;
+    }
+    .small-box:nth-child(even){
+      background-color: #fa0;
+      float: right;
+    }
+
+    .wrap::after{
+      content:'';
+      display: block;
+      clear: both;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="small-box">
+    <!-- 點擊區 -->
+      <a class="container" href="#">
+        <p class="icon-title">文化</p>
+        <!-- 點擊圖片區 -->
+        <img src="asset 29.png" alt="">
+        <!-- 點擊文字區 -->
+        <div class="text-area">
+          <p class="bold">「E Ulu A Paʻa」～ビショップ ミュージアム が年に一度のファンドレイジングを開催！～</p>
+          <p class="thin">
+            <span class="date">2022/08/12</span>
+          </p>
+        </div>
+      </a>
+    </div>
+
+    <div class="small-box">
+    <!-- 點擊區 -->
+      <a class="container" href="#">
+        <p class="icon-title">海</p>
+        <!-- 點擊圖片區 -->
+        <img src="asset 31.jpeg" alt="">
+        <!-- 點擊文字區 -->
+        <div class="text-area">
+          <p class="bold">Sustainable Coastlines Hawai‘i x Lanai TRANSIT HAWAII 共にハワイの海を守る活動を開始</p>
+          <p class="thin">
+            <span class="date">2021/08/24</span>
+          </p>
+        </div>
+      </a>
+    </div>
+
+    <div class="small-box">
+    <!-- 點擊區 -->
+      <a class="container" href="#">
+        <p class="icon-title">海</p>
+        <!-- 點擊圖片區 -->
+        <img src="asset 32.jpeg" alt="">
+        <!-- 點擊文字區 -->
+        <div class="text-area">
+          <p class="bold">『世界海洋デー』とは～豊かな海の環境を守ろう～</p>
+          <p class="thin">
+            <span class="date">2022/08/08</span>
+          </p>
+        </div>
+      </a>
+    </div>
+
+    <div class="small-box">
+    <!-- 點擊區 -->
+      <a class="container" href="#">
+        <p class="icon-title">カルチャー</p>
+        <!-- 點擊圖片區 -->
+        <img src="asset 33.jpeg" alt="">
+        <!-- 點擊文字區 -->
+        <div class="text-area">
+          <p class="bold">POW! WOW! x ハワイアン航空　限定ロゴグッズ販売の収益が子供たちへの教育サポートに</p>
+          <p class="thin">
+            <span class="date">2022/08/12</span>
+          </p>
+        </div>
+      </a>
+    </div>
+
+  </div>
+  
+</body>
+</html>

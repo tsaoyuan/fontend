@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Large box use float</title>
+  <link rel="stylesheet" href="../reset.css">
+  <style>
+    .wrap{
+      margin: 10px auto;
+      /* 500 = 10*2 + 3*2 + 474 */
+      border: green 3px solid;
+      padding: 10px;
+      width: 474px;
+    }
+    .wrap a{
+      text-decoration: none;
+    }
+    a{
+      display: block;
+      width: 474px;
+    }
+    a img{
+      padding: 10px 0;
+      width: 474px;
+      vertical-align: middle;
+    }
+    .icon-title{
+      padding: 10px 0;
+    }
+    .text-area{
+      background-color: #ccc;
+    }
+    .text-area::after{
+      content: '';
+      display: block;
+      clear: both;
+    }
+    
+    .text-area .bold, .text-area .thin, .text-area .date{
+      padding: 10px 0;
+      width: calc(50% - 10px);
+    }
+    .date{
+      display: block;
+    }
+    .text-area .bold{
+      float: left;
+    }
+    .text-area .thin{
+      float: right;
+    }
+    
+    
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <!-- 點擊區 -->
+    <a class="pic" href="#">
+      <p class="icon-title">其他</p>
+      <!-- 點擊圖片區 -->
+      <img src="./asset 27.jpeg" alt="">
+      <!-- 點擊文字區 -->
+      <div class="text-area">
+        <p class="bold">優衣庫阿拉莫阿那店~與UTme一起捐贈給夏威夷食品銀行！限量設計“一起在夏威夷”系列~</p>
+        <p class="thin">
+          UTme!“一起在夏威夷”系列在優衣庫阿拉莫阿納店與當地藝術家和公司合作啟動了 UTme!“一起”
+          <span class="date">2022/01/28</span>
+        </p>
+      </div>
+    </a>
+
+  </div>
+  
+</body>
+</html>
