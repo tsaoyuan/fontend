@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>float 卡片式</title>
+  <link rel="stylesheet" href="../reset.css">
+  <style>
+    .card_trips{
+      margin: 10px auto;
+      /* 960 = 10*2 + 3*2 + 934 */
+      border: green 3px solid;
+      padding: 10px;
+      width: 934px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .card_trips:nth-child(2n+1){
+      flex-direction: row-reverse;
+    }
+    .large_box, .small_card{
+      box-sizing: border-box;
+      background-color: #99f;
+      width: calc(50% - 10px);
+    }
+    .large_box{
+      background-color: #ccc;
+      width: calc(50% - 10px);
+    }
+    .small_box{
+      width: calc(50% - 10px);
+      margin-bottom: 10px;
+    }
+
+    .card_trips .large_box .container{
+      text-decoration: none;
+      display: block;
+      width: 100%;
+    }
+
+    .card_trips .small_box .container{
+      text-decoration: none;
+      display: block;
+      width: 100%;
+    }
+    
+    /* 圖片 */
+    .large_box .container img{
+      padding: 10px 0;
+      width: 100%;
+      vertical-align: middle;
+    }
+    .small_box .container img{
+      padding: 10px 0;
+      width: 100%;
+      vertical-align: middle;
+    }
+    /* 文字 */
+    /* 大圖 */
+    .large_box .text_area{
+      background-color: #573;
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    .large_box .text_area .bold, .large_box .text_area .thin, .large_box .text_area .date{
+      padding: 10px 0;
+      width: calc(50% - 10px);
+    }
+    .large_box .date, .small_box .date{
+      display: block;
+    }
+    /* 小圖 */
+    .small_box .text_area .bold, .small_box .text_area .date{
+      padding: 10px 0;
+      width: 100%;
+    }
+    
+    .small_card{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    
+    
+    
+  </style>
+</head>
+<body>
+  <div class="card_trips">
+    <!-- 大圖區 -->
+    <div class="large_box">
+      <h3>旅行者</h3><small>能做什麼 旅行者能做什麼</small>
+      <!-- 點擊區 -->
+      <a class="container" href="#">
+        <p class="icon_title">其他</p>
+        <!-- 點擊圖片區 -->
+        <img src="./asset 27.jpeg" alt="">
+        <!-- 點擊文字區 -->
+        <div class="text_area">
+          <p class="bold">優衣庫阿拉莫阿那店~與UTme一起捐贈給夏威夷食品銀行！限量設計“一起在夏威夷”系列~</p>
+          <p class="thin">UTme!“一起在夏威夷”系列在優衣庫阿拉莫阿納店與當地藝術家和公司合作啟動了 UTme!“一起”
+            <span class="date">2022/01/28</span>
+          </p>
+        </div>
+      </a>
+    </div>
+    <!-- 小圖主區塊 -->
+    <div class="small_card">
+      <!-- 小圖區-カルチャー -->
+      <div class="small_box">
+        <!-- 點擊區 -->
+        <a class="container" href="#">
+          <p class="icon_title">文化</p>
+          <!-- 點擊圖片區 -->
+          <img src="asset 29.png" alt="">
+          <!-- 點擊文字區 -->
+          <div class="text_area">
+            <p class="bold">「E Ulu A Paʻa」～ビショップ ミュージアム が年に一度のファンドレイジングを開催！～</p>
+            <p class="thin">
+              <span class="date">2022/08/12</span>
+            </p>
+          </div>
+        </a>
+      </div>
+
+      <!-- 小圖區-sea -->
+      <div class="small_box">
+        <!-- 點擊區 -->
+        <a class="container" href="#">
+          <p class="icon_title">海</p>
+          <!-- 點擊圖片區 -->
+          <img src="asset 31.jpeg" alt="">
+          <!-- 點擊文字區 -->
+          <div class="text_area">
+            <p class="bold">Sustainable Coastlines Hawai‘i x Lanai TRANSIT HAWAII 共にハワイの海を守る活動を開始</p>
+            <p class="thin">
+              <span class="date">2022/08/24</span>
+            </p>
+          </div>
+        </a>
+      </div>
+
+      <!-- 小圖區-sea -->
+      <div class="small_box">
+        <!-- 點擊區 -->
+        <a class="container" href="#">
+          <p class="icon_title">海</p>
+          <!-- 點擊圖片區 -->
+          <img src="asset 32.jpeg" alt="">
+          <!-- 點擊文字區 -->
+          <div class="text_area">
+            <p class="bold">『世界海洋デー』とは～豊かな海の環境を守ろう～</p>
+            <p class="thin">
+              <span class="date">2022/08/08</span>
+            </p>
+          </div>
+        </a>
+      </div>
+
+      <!-- 小圖區-カルチャー -->
+      <div class="small_box">
+        <!-- 點擊區 -->
+        <a class="container" href="#">
+          <p class="icon_title">カルチャー</p>
+          <!-- 點擊圖片區 -->
+          <img src="asset 33.jpeg" alt="">
+          <!-- 點擊文字區 -->
+          <div class="text_area">
+            <p class="bold">POW! WOW! x ハワイアン航空　限定ロゴグッズ販売の収益が子供たちへの教育サポートに</p>
+            <p class="thin">
+              <span class="date">2022/08/12</span>
+            </p>
+          </div>
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="card_trips">
+    <!-- 大圖區 -->
+    <div class="large_box">
+      <h3>旅行者</h3><small>能做什麼 旅行者能做什麼</small>
+      <!-- 點擊區 -->
+      <a class="container" href="#">
+        <p class="icon_title">其他</p>
+        <!-- 點擊圖片區 -->
+        <img src="./asset 27.jpeg" alt="">
+        <!-- 點擊文字區 -->
+        <div class="text_area">
+          <p class="bold">優衣庫阿拉莫阿那店~與UTme一起捐贈給夏威夷食品銀行！限量設計“一起在夏威夷”系列~</p>
+          <p class="thin">UTme!“一起在夏威夷”系列在優衣庫阿拉莫阿納店與當地藝術家和公司合作啟動了 UTme!“一起”
+            <span class="date">2022/01/28</span>
+          </p>
+        </div>
+      </a>
+    </div>
+    <!-- 小圖主區塊 -->
+    <div class="small_card">
+      <!-- 小圖區-カルチャー -->
+      <div class="small_box">
+        <!-- 點擊區 -->
+        <a class="container" href="#">
+          <p class="icon_title">カルチャー</p>
+          <!-- 點擊圖片區 -->
+          <img src="asset 33.jpeg" alt="">
+          <!-- 點擊文字區 -->
+          <div class="text_area">
+            <p class="bold">POW! WOW! x ハワイアン航空　限定ロゴグッズ販売の収益が子供たちへの教育サポートに</p>
+            <p class="thin">
+              <span class="date">2022/08/12</span>
+            </p>
+          </div>
+        </a>
+      </div>
+
+      <!-- 小圖區-sea -->
+      <div class="small_box">
+        <!-- 點擊區 -->
+        <a class="container" href="#">
+          <p class="icon_title">海</p>
+          <!-- 點擊圖片區 -->
+          <img src="asset 31.jpeg" alt="">
+          <!-- 點擊文字區 -->
+          <div class="text_area">
+            <p class="bold">Sustainable Coastlines Hawai‘i x Lanai TRANSIT HAWAII 共にハワイの海を守る活動を開始</p>
+            <p class="thin">
+              <span class="date">2022/08/24</span>
+            </p>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    
+  </div>
+</body>
+</html>
