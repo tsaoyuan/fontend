@@ -13,23 +13,27 @@
       border: green 3px solid;
       padding: 10px;
       width: 934px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
     }
     .large_box, .small_card{
       box-sizing: border-box;
       background-color: #99f;
-      width: 467px;
+      width: calc(50% - 10px);
     }
     .large_box{
       background-color: #ccc;
+      width: calc(50% - 10px);
     }
     .small_box{
-      width: calc(50% - 10px) ;
+      width: calc(50% - 10px);
     }
 
     .card_trips .large_box .container{
       text-decoration: none;
       display: block;
-      width: 467px;
+      width: 100%;
     }
 
     .card_trips .small_box .container{
@@ -38,12 +42,10 @@
       width: 100%;
     }
     
-    
-    
     /* 圖片 */
     .large_box .container img{
       padding: 10px 0;
-      width: 467px;
+      width: 100%;
       vertical-align: middle;
     }
     .small_box .container img{
@@ -74,6 +76,7 @@
     
     .small_card{
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-between;
     }
     
