@@ -7,16 +7,60 @@
   <title>foot</title>
   <link rel="stylesheet" href="../reset.css">
   <style>
+    .foot_background{
+      width: 1280px;
+      background-color: #aaa;
+      
+    }
+    .foot_content{
+      width: 960px;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .foot_top{
+      padding-top: 30px;
+      background-color: #fa0;
+      padding-bottom: 10px;
+    }
+    .foot_top .site_item{
+      width: 20%;
+    }
+    .foot_top .site_item .site_unit{
+      display: block;
+      text-decoration: none;
+      padding-bottom: 10px;
+    }
 
+    .foot_top .site_notice{
+      width: 40%;
+    }
+
+    .foot_bottom{
+      background-color: #5aa;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    .foot_bottom::before{
+      content: "";
+      width: 100%;
+      display: block;
+      border-bottom: #000 1px solid;
+    }
+    
   </style>
 </head>
 <body>
   <article class="foot_background">
-    <section class="foot_top">
+    <section class="foot_content foot_top">
       <div class="site_item">
         <a href="#" class="site_unit">
-            <h3></h3>
-            <p></p>
+          <h3>トップ</h3>
+          <p>TOP</p>
         </a>
         <a href="#" class="site_unit">
           <h3></h3>
@@ -58,7 +102,7 @@
       </div>
     </section>  
 
-    <section class="foot_bottom">
+    <section class="foot_content foot_bottom">
       <div class="foot_container">
         <div class="foot_note">
           <p></p>
