@@ -23,8 +23,8 @@
       background-color: #fa0;
       padding-bottom: 10px;
     }
-    .foot_top .site_item{
-      width: 20%;
+    .foot_top .site_item, .foot_top .site_notice{
+      width: 25%;
     }
     .foot_top .site_item .site_unit{
       display: block;
@@ -41,10 +41,20 @@
       font-size: 12px;
     }
 
-    .foot_top .site_notice{
-      width: 40%;
+    .site_notice .industry, .site_notice .ask, .site_notice .service, .site_notice .privacy{
+      display: block;
+      text-decoration: none;
+      margin-bottom: 10px;
+      font-size: 12px;
     }
-
+    .foot_top .site_notice .out_link::after{
+      content: '';
+      padding-left: 20px;
+      background-image: url("linkout.svg");
+      background-size: 16px 16px;
+      background-repeat: no-repeat;
+    }
+    
     .foot_bottom{
       background-color: #5aa;
       padding-top: 10px;
@@ -113,6 +123,10 @@
       </div>
       
       <div class="site_notice">
+        <a class="out_link industry" href="#">業界関係の方へ</a>
+        <a class="out_link ask" href="#">お問い合わせ</a>
+        <a class="out_link service" href="#">利用規約</a>
+        <a class="out_link privacy" href="#">プライバシーポリシー</a>
       </div>
     </section>  
 
