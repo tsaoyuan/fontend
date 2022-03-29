@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>foot</title>
+  <link rel="stylesheet" href="../reset.css">
+  <style>
+    .foot_background{
+      width: 1280px;
+      background-color: #aaa;
+      
+    }
+    .foot_content{
+      width: 960px;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .foot_top{
+      padding-top: 30px;
+      background-color: #fa0;
+      padding-bottom: 10px;
+    }
+    .foot_top .site_item, .foot_top .site_notice{
+      width: 25%;
+    }
+    .foot_top .site_item .site_unit{
+      display: block;
+      text-decoration: none;
+      padding-bottom: 10px;
+      line-height: 24px;
+
+    }
+    .foot_top .site_item .site_unit h3{
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .foot_top .site_item .site_unit p{
+      font-size: 12px;
+    }
+
+    .site_notice .industry, .site_notice .ask, .site_notice .service, .site_notice .privacy{
+      display: block;
+      text-decoration: none;
+      margin-bottom: 10px;
+      font-size: 12px;
+    }
+    .foot_top .site_notice .out_link::after{
+      content: '';
+      padding-left: 20px;
+      background-image: url("linkout.svg");
+      background-size: 16px 16px;
+      background-repeat: no-repeat;
+    }
+    
+    .foot_bottom{
+      background-color: #5aa;
+      padding-top: 0px;
+      padding-bottom: 10px;
+      
+     }
+    .foot_bottom::before{
+      content: "";
+      width: 100%;
+      display: block;
+      border-top: #000 1px solid;
+      padding-top: 20px;
+    }
+    .foot_bottom .foot_container{
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .foot_bottom .foot_container .foot_note, .foot_bottom .foot_container .foot_logo, .foot_bottom .foot_container .foot_social_media{
+      flex-grow: 1;
+    }
+    .foot_bottom .foot_social_media{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+    .foot_bottom .foot_social_media a{
+      text-decoration: none;
+      margin-left: 10px;
+    }
+    
+    .foot_bottom .copy_right{
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    padding: 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <article class="foot_background">
+    <section class="foot_content foot_top">
+      <div class="site_item">
+        <a href="#" class="site_unit">
+          <h3>トップ</h3>
+          <p>TOP</p>
+        </a>
+        <a href="#" class="site_unit">
+          <h3>マラマハワイとは</h3>
+          <p>About Mālama Hawaiʻi</p>
+        </a>
+      </div>
+      
+      <div class="site_item">
+        <a href="#" class="site_unit">
+            <h3>旅行者にできること</h3>
+            <p>WHAT TRAVELERS CAN DO</p>
+        </a>
+        <a href="#" class="site_unit">
+          <h3>取組み紹介</h3>
+          <p>INITIATIVES</p>
+        </a>
+        <a href="#" class="site_unit">
+          <h3>関連映像</h3>
+          <p>MOVIES</p>
+        </a>
+      </div>
+
+      <div class="site_item">
+        <a href="#" class="site_unit">
+            <h3>コミュニティ紹介</h3>
+            <p>COMMUNITIES</p>
+        </a>
+        <a href="#" class="site_unit">
+          <h3>特集</h3>
+          <p>FEATURED</p>
+        </a>
+      </div>
+      
+      <div class="site_notice">
+        <a class="out_link industry" href="#">業界関係の方へ</a>
+        <a class="out_link ask" href="#">お問い合わせ</a>
+        <a class="out_link service" href="#">利用規約</a>
+        <a class="out_link privacy" href="#">プライバシーポリシー</a>
+      </div>
+    </section>  
+
+    <section class="foot_content foot_bottom">
+      <div class="foot_container">
+        <div class="foot_note">
+          <p>ハワイ州</p>
+          <p>レスポンシブル・ツーリズム</p>
+          <p>情報サイト</p>
+        </div>
+
+        <div class="foot_logo">
+          <img src="foot_logo.svg" alt="foot_logo">
+        </div>
+
+        <div class="foot_social_media">
+          <a href="#" class="tweet">
+            <img src="twitter.svg" alt="tweet">
+          </a>
+          <a href="#" class="instagram">
+            <img src="instagram.svg" alt="instagram">            
+          </a>
+          <a href="#" class="facebook">
+            <img src="facebook.svg" alt="facebook">
+          </a>
+          <a href="#" class="youtube">
+            <img src="youtube.svg" alt="youtube">
+          </a>
+          <a href="#" class="line">
+            <img src="line.svg" alt="line">
+          </a>
+        </div>
+      </div>
+
+      <div class="copy_right">
+        <p>©Hawai‘i Tourism Japan All rights reserved.</p>
+      </div>
+
+    </section>
+  </article>
+</body>
+</html>
