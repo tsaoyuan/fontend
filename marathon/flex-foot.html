@@ -77,6 +77,16 @@
     .foot_bottom .foot_container .foot_note, .foot_bottom .foot_container .foot_logo, .foot_bottom .foot_container .foot_social_media{
       flex-grow: 1;
     }
+    .foot_bottom .foot_social_media{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+    .foot_bottom .foot_social_media a{
+      text-decoration: none;
+      margin-left: 10px;
+    }
+    
     .foot_bottom .copy_right{
     width: 100%;
     text-align: center;
@@ -140,15 +150,25 @@
         </div>
 
         <div class="foot_logo">
-
+          <img src="foot_logo.svg" alt="foot_logo">
         </div>
 
         <div class="foot_social_media">
-          <a href="#" class="tweet"></a>
-          <a href="#" class="instagram"></a>
-          <a href="#" class="facebook"></a>
-          <a href="#" class="youtube"></a>
-          <a href="#" class="line"></a>
+          <a href="#" class="tweet">
+            <img src="twitter.svg" alt="tweet">
+          </a>
+          <a href="#" class="instagram">
+            <img src="instagram.svg" alt="instagram">            
+          </a>
+          <a href="#" class="facebook">
+            <img src="facebook.svg" alt="facebook">
+          </a>
+          <a href="#" class="youtube">
+            <img src="youtube.svg" alt="youtube">
+          </a>
+          <a href="#" class="line">
+            <img src="line.svg" alt="line">
+          </a>
         </div>
       </div>
 
