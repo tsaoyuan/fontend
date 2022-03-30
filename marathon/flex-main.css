@@ -40,13 +40,17 @@ vertical-align: middle;
   flex-grow: 1;
 } */
 
-
-.main_logo .main_logo_pic{
+/* main_logo */
+.header .main_logo .main_logo_pic{
   display: block;
+  text-decoration: none;
 }
-.main_logo .main_logo_pic h1 span{
+.header .main_logo .main_logo_pic h1 span{
   position: absolute;
   width: 1px;
   height: 1px;
   overflow: hidden;
+}
+.header .main_logo .main_logo_pic img{
+vertical-align: middle;
 }
