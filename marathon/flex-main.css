@@ -1,0 +1,9 @@
+.main_logo .main_logo_pic{
+  display: block;
+}
+.main_logo .main_logo_pic h1 span{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
