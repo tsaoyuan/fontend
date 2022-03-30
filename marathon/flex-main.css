@@ -1,3 +1,46 @@
+.container{
+  width: 100%;
+}
+/* header */
+.container .header{
+  background-color: #ccc;
+
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container .header:nth-child(n){
+  font-size: 12px;
+  padding: 10px;
+}
+
+/* search */
+.container .header .search{
+  flex-grow: 1;
+  display: flex;
+}
+
+.container .header .search .serch_icon{
+  align-self: center;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.container .header .search .serch_icon img{
+vertical-align: middle;
+}
+.container .header .search .search_text span{
+  display: block;
+}
+
+/* .container .header .search,
+.container .header .main_logo,
+.container .header .signature{
+  flex-grow: 1;
+} */
+
+
 .main_logo .main_logo_pic{
   display: block;
 }
