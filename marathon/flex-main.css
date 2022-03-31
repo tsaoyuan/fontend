@@ -102,3 +102,20 @@ text-align: end;
   text-decoration: none;
   color: #000;
 }
+
+/* business-link */
+.nav_bar .business-link{
+  text-align: end;
+}
+.nav_bar .business-link a{
+  display: inline-block;
+}
+
+.nav_bar .business-link a::after{
+  content: '';
+  padding-left: 20px;
+  background-image: url("linkout.svg");
+  background-size: 16px 16px;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
