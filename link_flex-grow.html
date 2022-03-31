@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>超連結 ＋ flex-grow</title>
+  <link rel="stylesheet" href="./reset.css">
+  <style>
+
+    .align{
+      width: 50%;
+      margin: auto;
+    }
+    .align h2{
+      padding: 10px 0;
+      text-align: center;
+    }
+    .wrap{
+      width: 100%;
+      margin: 10px 0;
+      padding: 10px;
+      box-sizing: border-box;
+
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .margin{
+      background-color: #fa0;
+    }
+    .margin a{
+      margin-right: auto;
+      margin-right: auto;
+    }
+
+    .grow{
+      background-color: #aaa;
+    }
+    .grow a{
+      flex-grow: 1;
+    }
+
+    .justfiy{
+      background-color: #4aa;
+      justify-content: space-between;
+    }
+    .justfiy a{
+      /* 限定寬度, 觸發 "空白" 可點擊 */
+      /* width: 33%; */
+    }
+
+    .box-group{
+      width: 600px;
+      background-color: #3a8;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .box{
+      width: 180px;
+      height: 180px;
+      background-color: #f55;
+      margin-right: auto;
+      margin-left: auto;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <section class="align">
+    <h2>flex + margin :</h2>
+    <!--分散對齊方式 1: flex + margin-righ: auto, margin-left: auto; 超連結空白處-未有點擊效果 -->
+    <div class="wrap margin">
+      <a href="#">what hapen?</a>
+      <a href="#">what hapen?</a>
+      <a href="#">what hapen?</a>
+    </div>
+
+    <h2>flex ＋ flex-grow :</h2>
+    <!--分散對齊方式 2: flex ＋ flex-grow: 1; 觸發"超連結空白處有點擊效果"效果 -->
+    <div class="wrap grow">
+      <a href="#">what hapen?</a>
+      <a href="#">what hapen?</a>
+      <a href="#">what hapen?</a>
+    </div>
+
+    <h2>flex ＋ justfiy-content :</h2>
+    <!--分散對齊方式 3: flex ＋ justfiy-content: space-between; 超連結空白處-未有點擊效果 -->
+    <div class="wrap justfiy">
+      <a href="#">what hapen?</a>
+      <a href="#">what hapen?</a>
+      <a href="#">what hapen?</a>
+    </div>
+  </section>
+</body>
+</html>
