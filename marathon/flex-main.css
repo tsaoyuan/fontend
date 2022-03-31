@@ -87,3 +87,18 @@ text-align: end;
   text-decoration: none;
   color: #d55;
 }
+
+/* nav_list */
+.nav_bar .nav_list{
+  display: flex;
+  flex-wrap: wrap;
+}
+.nav_bar .nav_list a{
+  margin-right: auto;
+  margin-left: auto;
+}
+.nav_bar .nav_list a,
+.nav_bar .business-link a{
+  text-decoration: none;
+  color: #000;
+}
