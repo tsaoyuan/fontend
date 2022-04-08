@@ -119,3 +119,32 @@ text-align: end;
   background-repeat: no-repeat;
   vertical-align: middle;
 }
+
+/* main_title_group */
+.main_title_group{
+  padding-top: 80px;
+
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.main_title_group .main_think,
+.main_title_group .main_slogan {
+  /* flex-grow: 1; */
+}
+.main_title_group .main_think{
+  margin-right: 10px;
+  line-height: 24px;
+}
+.main_title_group .main_slogan{
+  margin-left: 10px;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.main_title_group .main_think span,
+.main_title_group .main_slogan span{
+  display: block;
+}
