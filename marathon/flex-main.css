@@ -159,10 +159,31 @@ text-align: end;
   width: 65%;
   margin-right: auto;
 }
+.main_visul .main_visul_pic img{
+  width: 100%;
+}
+
 .main_visul .main_visul_text{
   width: 30%;
   margin-left: auto;
 }
-.main_visul .main_visul_pic img{
-  width: 100%;
+.main_visul .main_visul_text .main_visul_text_icon{
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
+
+.main_visul .texr_content p{
+  display: flex;
+  flex-wrap: wrap;
+
+  -webkit-writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
+  line-height: 24px;
+
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* main_visul_cap */
+
