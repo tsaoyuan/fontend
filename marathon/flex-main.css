@@ -148,3 +148,21 @@ text-align: end;
 .main_title_group .main_slogan span{
   display: block;
 }
+
+/* main_visul */
+.main_visul{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.main_visul .main_visul_pic{
+  width: 65%;
+  margin-right: auto;
+}
+.main_visul .main_visul_text{
+  width: 30%;
+  margin-left: auto;
+}
+.main_visul .main_visul_pic img{
+  width: 100%;
+}
