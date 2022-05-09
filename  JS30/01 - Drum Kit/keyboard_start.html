@@ -69,10 +69,12 @@
 
     // play music
     const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
+    audio.play();
 
     // dom style
 
     const dom = document.querySelector(`div[data-key="${e.keyCode}"]`);
+    dom.classList.add("playing");
 
     console.log(audio, dom);
     // console.log("1");
