@@ -32,11 +32,13 @@
     }
 
     console.log(gender); // undefined -> gender 是一變數
-    gender('male'); // gender is not a function
+    // gender('male'); // gender is not a function
 
     var gender = function (sex) {
       console.log(sex);
     }
+    console.log(gender); // ƒ (sex) {... -> gender 內容為 function
+    gender('male'); // male
 
 
   </script>
