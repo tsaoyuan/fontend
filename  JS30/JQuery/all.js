@@ -5,7 +5,7 @@ $(function () {
   })
 
   $('.color').on('click', function () {
-    $('.box').css({ 'background-color': 'red'});
+    $('.box').toggleClass('bg-red');
   })
 })
 
