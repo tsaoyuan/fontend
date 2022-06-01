@@ -1,5 +1,6 @@
 $(function () {
   $('.btn').on('click', function () {
-    console.log('hi');
+    // console.log('hi');
+    $('.box').hide();
   })
 })
