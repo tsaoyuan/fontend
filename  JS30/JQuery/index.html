@@ -6,7 +6,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .wrap{
+    width: 300px;
+    margin: 0 auto;
+    border: 1px solid black;
+  }
+  .box{
+    width: 100px;
+    height: 100px;
+    background-color: #fa0;
+    margin: 10px auto;
+  }
+  .box:hover
+  {
+    background-color: #f00;
+  }
+
+  .btn{
+    background: #ddd;
+    border-radius: 5px;
+    width: 50px;
+    margin: 10px auto;
+    font-size: 12px;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+</style>
 <body>
+  <div class="wrap">
+    <div class="box"></div>
+    <div class="btn">點擊</div>
+  </div>
   
   
   <script src="https://code.jquery.com/jquery-3.6.0.min.js">
