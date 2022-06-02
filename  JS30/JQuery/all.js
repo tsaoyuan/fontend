@@ -16,5 +16,15 @@ $(function () {
     // console.log('搖完了');
     $('.box').removeClass('animate__animated animate__swing');
   })
+  // this
+  $('.small').on('click',function () {
+    $(this).addClass('animate__animated animate__heartBeat');
+  })
+
+  // 監聽 animate 作動完
+  $('.small').on('animationend',function () {
+    $(this).removeClass('animate__animated animate__heartBeat');
+  })
+
 })
 
