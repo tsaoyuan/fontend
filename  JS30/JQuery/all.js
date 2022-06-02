@@ -33,13 +33,14 @@ $(function () {
     name: 'DoDo',
     like: 'Dog'
   }
-  $('[data-set = "name"]').text(person.name);
-  $('[data-set = "like"]').text(person.like);
+  // $('[data-set = "name"]').text(person.name);
+  // $('[data-set = "like"]').text(person.like);
 
   // Object.keys() 取出 key 值
   // console.log(Object.keys(person));
   Object.keys(person).forEach(function (key) {
-    console.log(key);
+    // console.log(key);
+    $(`[data-set = "${key}"]`).text(person[key]);
   })
 
 })
