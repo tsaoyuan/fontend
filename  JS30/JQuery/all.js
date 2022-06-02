@@ -13,7 +13,8 @@ $(function () {
   })
   // 監聽 animate 作動完
   $('.box').on('animationend',function () {
-    console.log('搖完了');
+    // console.log('搖完了');
+    $('.box').removeClass('animate__animated animate__swing');
   })
 })
 
