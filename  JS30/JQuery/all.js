@@ -43,5 +43,16 @@ $(function () {
     $(`[data-set = "${key}"]`).text(person[key]);
   })
 
+  // randomuser + ajax
+  $.ajax({
+    url: 'https://randomuser.me/api/',
+    dataType: 'json',
+    success: function(data) {
+      // console.log(data);
+      const result = data.results;
+      console.log(result);
+    }
+  });
+
 })
 
