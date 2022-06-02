@@ -27,10 +27,14 @@ $(function () {
   })
 
   // JQuery 資料灌入畫面
-  let name = 'DoDo';
-  let like = 'Dog';
-  $('[data-set = "name"]').text(name);
-  $('[data-set = "like"]').text(like);
+  // let name = 'DoDo';
+  // let like = 'Dog';
+  const person ={
+    name: 'DoDo',
+    like: 'Dog'
+  }
+  $('[data-set = "name"]').text(person.name);
+  $('[data-set = "like"]').text(person.like);
 
 
 })
