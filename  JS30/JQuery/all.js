@@ -26,5 +26,12 @@ $(function () {
     $(this).removeClass('animate__animated animate__heartBeat');
   })
 
+  // JQuery 資料灌入畫面
+  let name = 'DoDo';
+  let like = 'Dog';
+  $('[data-set = "name"]').text(name);
+  $('[data-set = "like"]').text(like);
+
+
 })
 

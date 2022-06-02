@@ -53,6 +53,16 @@
   .bg-red{
     background-color: #f00;
   }
+  .line::after{
+    content: '';
+    display: block;
+    height: 1px;
+    margin-top: 10px;
+    background-color: #000;
+  }
+  .data span{
+    display: block;
+  }
 </style>
 <body>
   <div class="wrap">
@@ -62,9 +72,13 @@
     <div class="btn click">點擊</div>
     <div class="btn color">換色</div>
     <div class="btn animate">animate</div>
+  </div>
+  <div class="line"></div>
+  <div class="data">
+    <span data-set="name"></span>
+    <span data-set="like"></span>
 
   </div>
-  
   
   <script src="https://code.jquery.com/jquery-3.6.0.min.js">
   </script>
