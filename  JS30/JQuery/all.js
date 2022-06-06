@@ -55,12 +55,16 @@ $(function () {
       const people = {
         name: result.name.first,
         email: result.email,
-        tel: result.cell
+        tel: result.cell,
+        img: result.picture.large
+        
       }
       console.log(people);
       Object.keys(people).forEach(function (key) {
         $(`[data-set = "${key}"]`).text(people[key]);
       })
+      $(`[data-set = "img"]`).attr('src', people.img);
+
     }
   });
 
