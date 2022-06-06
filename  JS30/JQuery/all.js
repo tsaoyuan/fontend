@@ -49,8 +49,15 @@ $(function () {
     dataType: 'json',
     success: function(data) {
       // console.log(data);
-      const result = data.results;
+      const result = data.results[0];
       console.log(result);
+
+      const people = {
+        name: result.name.first,
+        email: result.email,
+        call: result.phone
+      }
+      console.log(people);
     }
   });
 
