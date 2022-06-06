@@ -9,3 +9,9 @@
    console.log('hello word!');
  }
 hello();
+
+hi();
+let hi = function hello() {
+  console.log('hello word!');
+}
+
