@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .wrap{
+    width: 300px;
+    margin: 0 auto;
+    border: 1px solid black;
+  }
+  .box{
+    width: 100px;
+    height: 100px;
+    background-color: #fa0;
+    margin: 10px auto;
+    transition: 1.2s background-color;
+  }
+  .small{
+    width: 50px;
+    height: 50px;
+    margin: 10px auto;
+    text-align: center;
+    line-height: 50px;
+  }
+  /* .box:hover
+  {
+    background-color: #f00;
+  } */
+
+  .btn{
+    background: #ddd;
+    border-radius: 5px;
+    width: 50px;
+    margin: 10px auto;
+    font-size: 12px;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .bg-red{
+    background-color: #f00;
+  }
+  .line::after{
+    content: '';
+    display: block;
+    height: 1px;
+    margin-top: 10px;
+    background-color: #000;
+  }
+  .data p{
+    margin-bottom: 3px;
+  }
+</style>
+<body>
+  <div class="wrap">
+    <div class="box bg-red"></div>
+    <div class="box small">click</div>
+
+    <div class="btn click">點擊</div>
+    <div class="btn color">換色</div>
+    <div class="btn animate">animate</div>
+  </div>
+  <div class="line"></div>
+  <div class="data">
+    <p>姓名：<span data-set="name"></span></p> 
+    <p>E-mail：<span data-set="email"></span></p> 
+    <p>電話：<span data-set="tel"></span></p> 
+    <div class="pic">
+      <img src="" alt="" data-set="img">
+    </div>
+
+    <span data-set="like"></span>
+
+  </div>
+  
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js">
+  </script>
+  <script src="all.js">
+
+  </script>
+</body>
+</html>
