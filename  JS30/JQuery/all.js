@@ -55,9 +55,12 @@ $(function () {
       const people = {
         name: result.name.first,
         email: result.email,
-        call: result.phone
+        tel: result.cell
       }
       console.log(people);
+      Object.keys(people).forEach(function (key) {
+        $(`[data-set = "${key}"]`).text(people[key]);
+      })
     }
   });
 
