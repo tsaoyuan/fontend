@@ -26,6 +26,8 @@ function dog() {
   function cat() {
     console.log(x);
   }
+
+  cat();
 }
 
 dog();
