@@ -74,16 +74,25 @@
       audio.play();
     }
 
-    // dom style
+  // dom style
 
     const dom = document.querySelector(`div[data-key="${e.keyCode}"]`);
     if(dom) dom.classList.add("playing");
-     
     console.log(audio, dom);
-    // console.log("1");
-
   }
-  
+  // 按下按鈕後(字塊變色)，即清除 class = "playing"，字塊恢復初始色
+
+  document.querySelectorAll('.key').forEach(function (key) {
+      key.addEventListener('transitionend', transitionendHandler)
+      
+    });
+    
+  function transitionendHandler(e) {
+      if(e.propertyName === 'transform'){
+      // console.log(e.currentarget);
+        e.currentTarget.classList.remove('playing');
+      }
+    }
 })()
 </script>
 
