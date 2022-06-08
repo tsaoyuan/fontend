@@ -4,8 +4,15 @@ if(true){
 
 console.log(a); // 1
 
-function bo() {
-  var b = 'bbq';
+// function bo() {
+//   var b = 'bbq';
+// }
+
+// console.log(b);
+
+// let, const scope
+if(true){
+  let c = 666;
 }
 
-console.log(b);
+console.log(c); // c is not defined
