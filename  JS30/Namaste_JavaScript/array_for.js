@@ -5,4 +5,5 @@ let b = [];
    b.push(a[i]*2);
  }
  console.log(b);
+ console.log(i);
 
