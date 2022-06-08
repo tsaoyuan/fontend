@@ -10,10 +10,22 @@
 // hey();
 
 // function 外的變數值 ( console.log(a) ), 抓不到 function 內的變數設定
-function hey() {
-  var a = 6;
-  let b = 99;
+// function hey() {
+//   var a = 6;
+//   let b = 99;
+// }
+
+// console.log(a);
+// console.log(b);
+
+// scope chain
+var x = 1;
+
+function dog() {
+  var x = 2;
+  function cat() {
+    console.log(x);
+  }
 }
 
-console.log(a);
-console.log(b);
+dog();
