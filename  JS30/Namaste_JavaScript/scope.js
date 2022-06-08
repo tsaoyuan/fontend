@@ -22,7 +22,7 @@
 var x = 1;
 
 function dog() {
-  var x = 2;
+  // var x = 2;
   function cat() {
     console.log(x);
   }
