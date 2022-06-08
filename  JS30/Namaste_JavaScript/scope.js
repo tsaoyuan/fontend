@@ -8,3 +8,12 @@
 //   console.log(b);
 // }
 // hey();
+
+// function 外的變數值 ( console.log(a) ), 抓不到 function 內的變數設定
+function hey() {
+  var a = 6;
+  let b = 99;
+}
+
+console.log(a);
+console.log(b);
