@@ -23,3 +23,12 @@ sayHello(1, 'a');
 sayHello(1);
 sayHello(1, 'a', 'a');
 
+function here() {
+  console.log('哇底加');
+}
+
+function up(a, b) {
+  here();
+}
+
+up(1, "a"); // 哇底加
