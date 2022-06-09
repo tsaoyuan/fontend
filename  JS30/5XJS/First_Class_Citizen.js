@@ -8,4 +8,6 @@ function dog() {
   console.log('I am a dog!');
 }
 
-cat(dog);
+cat(dog); // I am a dog!
+cat(dog()); // TypeError: a is not a function
+
