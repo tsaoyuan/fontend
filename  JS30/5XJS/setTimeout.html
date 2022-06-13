@@ -6,34 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      // // DOM Ready!
-      const context = document.querySelector(".hi");
-      const text = document.querySelectorAll(".word");
-      console.log(context.textContent);
-
-      console.log(text[1].innerText);
-
-      for(let i = 0; i < 3; i++){
-        text[i].innerText = "Z";
-      }
-      text.forEach(t =>{t.innerText = "AS"})
-    })
-    
-  </script>
-  <style>
-    .word:nth-child(1){
-      color: red;
-    }
-  </style>
+  <script src = "script.js"></script>
+  
 </head>
 <body>
-  <div class = 'hi'>hi</div>
-  <span class="word">A</span>
-  <span class="word">B</span>
-  <span class="word">C</span>
-  <input type="submit" value="click">
+  <div class = "hi">hi</div>
+  <input class="btn-click" type="submit" value="click">
 
   
   
