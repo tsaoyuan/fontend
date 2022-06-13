@@ -4,6 +4,6 @@ document.addEventListener("DOMContentLoaded", function () {
    const btnC = document.querySelector(".btn-click")
   
    btnC.addEventListener("click", function () {
-     console.log('11111');
+     word.innerHTML = "holy share."
    });
 });
