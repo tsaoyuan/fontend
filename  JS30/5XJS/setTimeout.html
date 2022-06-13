@@ -10,13 +10,29 @@
     document.addEventListener("DOMContentLoaded", function () {
       // // DOM Ready!
       const context = document.querySelector(".hi");
+      const text = document.querySelectorAll(".word");
       console.log(context.textContent);
+
+      console.log(text[1].innerText);
+
+      for(let i = 0; i < 3; i++){
+        text[i].innerText = "Z";
+      }
+
     })
     
   </script>
+  <style>
+    .word:nth-child(1){
+      color: red;
+    }
+  </style>
 </head>
 <body>
   <div class = 'hi'>hi</div>
+  <span class="word">A</span>
+  <span class="word">B</span>
+  <span class="word">C</span>
   <input type="submit" value="click">
 
   
