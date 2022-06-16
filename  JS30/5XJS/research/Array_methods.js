@@ -5,12 +5,13 @@ const items = [
   {name: 'Book',      price: 5},
   {name: 'Phone',     price: 500},
   {name: 'Computer',  price: 1000},
-  {name: 'Keyboard',  price: 25}
+  {name: 'Keyboard',  price: 25},
+  {name: 'Book',      price: 455}
+
 ]
 
-const itemNames = items.map((item)=>{
-  return item.name 
+const foundItem = items.find((item)=>{
+  return item.name === 'Book'
 })
 
-console.log(items);
-console.log(itemNames);
+console.log(foundItem);
