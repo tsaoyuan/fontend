@@ -10,8 +10,7 @@ const items = [
 
 ]
 
-const foundItem = items.find((item)=>{
-  return item.name === 'Book'
+ items.forEach((item)=>{
+  console.log(item.name);
 })
 
-console.log(foundItem);
