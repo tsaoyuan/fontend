@@ -9,15 +9,14 @@ const items = [
 
 ]
 
-const haveExpensive = items.some((item)=>{
-  return item.price >= 1000
+const haveExpensive = items.every((item)=>{
+  return item.price >= 500
 })
 
- const haveFree = items.some((item)=>{
-  return item.price <= 0
+ const notfree = items.every((item)=>{
+  return item.price >= 0
 })
 
-
-console.log(haveExpensive);   // true; 只要有一個 element 符合 條件
-console.log(haveFree);        // false; 全部的 element 都沒有符合條件
+console.log(haveExpensive);   // false; 只要有一個 element 不符合 條件
+console.log(notfree);        // true; 全部的 element 都符合條件
 
