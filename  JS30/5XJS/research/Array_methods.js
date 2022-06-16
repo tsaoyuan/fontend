@@ -5,12 +5,12 @@ const items = [
   {name: 'Book',      price: 5},
   {name: 'Phone',     price: 500},
   {name: 'Computer',  price: 1000},
-  {name: 'Keyboard',  price: 25},
+  {name: 'Keyboard',  price: 25}
 ]
 
-const filterItems = items.filter((item)=>{
-  return item.price <= 100
+const itemNames = items.map((item)=>{
+  return item.name 
 })
 
 console.log(items);
-console.log(filterItems);
+console.log(itemNames);
