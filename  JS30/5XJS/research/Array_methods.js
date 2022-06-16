@@ -14,3 +14,9 @@ const items = [
   console.log(item.name);
 })
 
+let a = []
+items.forEach((item)=>{
+  a.push(item.name)
+})
+
+console.log(a);
