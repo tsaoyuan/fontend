@@ -30,6 +30,16 @@ const items = [
 // Keyboard:   acc = 1815, item.price = 25 return 1840
 console.log(`have initValue: ${total}`); // 1840
 
+console.log("--------------------");
+
+
+const noInit_total = items.reduce((accumulator, item)=>{
+  const returns = accumulator + item.price
+  console.log(`accumulator: ${accumulator}, item.price: ${item.price},returns: ${returns}`);
+ return returns
 })
+
+console.log(`\n`);
+console.log(`no initValue: ${noInit_total}`); // [object Object]200105500100025
 
 
