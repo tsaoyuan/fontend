@@ -9,14 +9,27 @@ const items = [
 
 ]
 
-const haveExpensive = items.every((item)=>{
-  return item.price >= 500
+// reduce() have 2 arguments, first argument is callback function and the second argument is initalValue for the previousValue (accumulator)
+// reduce(callback function, initValue)
+// reduce((previousValue, currentValue) => { /*...*/ }, initValue)
+// initValue is 0
+// set currentValue is item
+
+
+ const total = items.reduce((accumulator, item)=>{
+   const returns = accumulator + item.price
+   console.log(`accumulator: ${accumulator}, item.price: ${item.price},returns: ${returns}`);
+  return returns
+}, 0)
+// Bike:       acc = 0, item.price = 100 return 100
+// TV:         acc = 100, item.price = 200 return 300
+// Album:      acc = 300, item.price = 10 return 310
+// Book:       acc = 310, item.price = 5 return 315
+// Phone:      acc = 315, item.price = 500 return 815
+// Computer:   acc = 815, item.price = 1000 return 1815
+// Keyboard:   acc = 1815, item.price = 25 return 1840
+console.log(`have initValue: ${total}`); // 1840
+
 })
 
- const notfree = items.every((item)=>{
-  return item.price >= 0
-})
-
-console.log(haveExpensive);   // false; 只要有一個 element 不符合 條件
-console.log(notfree);        // true; 全部的 element 都符合條件
 
