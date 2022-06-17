@@ -42,4 +42,16 @@ const noInit_total = items.reduce((accumulator, item)=>{
 console.log(`\n`);
 console.log(`no initValue: ${noInit_total}`); // [object Object]200105500100025
 
+console.log(`items[0]: ${items[0]}`); // [object Object]
+console.log(`items[1].price: ${items[1].price}`); // 200
+
+
+// why log is "[object Object]200105500100025" ?
+// accumulator: items[0] 是一包物件, [object Object]
+// currentValue: items[1].price => item.price, 200
+// accumulator + item.price = [object Object]200
+// 以此類推, 最終結果：[object Object]200105500100025
+
+
+
 
