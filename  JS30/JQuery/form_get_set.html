@@ -30,7 +30,16 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js">
   </script>
   <script>
+    $('.submit').on('click', function(){
+      let name = $('[data-field="name"]').val();
+      let phone= $('[data-field="phone"]').val();
+      let email= $('[data-field="email"]').val();
+        
+      console.log(name);
+      console.log(phone);
+      console.log(email);
 
+    });
   </script>
 </body>
 </html>
