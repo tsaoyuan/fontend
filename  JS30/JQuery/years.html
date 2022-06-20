@@ -38,7 +38,7 @@
 $('.btn').on('click', function() {
   let year = Number($('[name="year"]').val());
   
-  if (year % 4 === 0 && year % 100 === 0 && year % 400 === 0) {
+  if ((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0) {
     $('.result').text(`是閏年`);
   }
   else{
