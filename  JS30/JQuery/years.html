@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+  <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+  
+</head>
+<body>
+
+  <label>請輸入年份 <input type="text" name="year"></label>
+  <button class="btn">送出</button>
+
+  <p class="result">在這裡顯示「是閏年」或「不是閏年」</p>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  
+  <script>
+    /*
+    如何判斷年份是否為閏年
+    若要判斷年份是否為閏年，請依照下列步驟執行：
+    1. 如果年份被 4 整除，則移至步驟 2。 否則，請跳至步驟 5。
+    2. 如果年份被 100 整除，則移至步驟 3。 否則，請跳至步驟 4。
+    3. 如果年份被 400 整除，則移至步驟 4。 否則，請跳至步驟 5。
+    4. 該年份為閏年 (有 366 天)。
+    5. 該年分不是閏年 (有 365 天)。
+
+    如:
+    1600  ===> 是閏年
+    2000  ===> 是閏年
+    2400  ===> 是閏年
+
+    1900  ===> 不是閏年
+    2021  ===> 不是閏年
+    2100  ===> 不是閏年
+  */
+
+$('.btn').on('click', function() {
+  let year = Number($('[name="year"]').val());
+  
+  if (year % 4 === 0 && year % 100 === 0 && year % 400 === 0) {
+    $('.result').text(`是閏年`);
+  }
+  else{
+    $('.result').text(`不是閏年`)
+  }
+  // todo: 試著判斷傳入的 year 參數，並將判斷是否為閏年的結果顯示在網頁上。
+  // code here...
+
+});
+  </script>
+</body>
+</html>
