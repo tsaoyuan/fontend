@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>form</title>
+
+</head>
+<style>
+  .contaner{
+    width: 50%;
+    border: black 1px solid;
+    margin: auto;
+    padding: 10px;
+  }
+  label{
+    display: block;
+  }
+  button{
+    margin-top: 10px;
+  }
+</style>
+<body>
+  <div class="contaner">
+    <label>
+      姓名:
+      <input type="text" data-field="name" value="root">
+    </label>
+    <label>
+      電話:
+      <input type="text" data-field="phone" value="0800-000-000">
+    </label>
+    <label>
+      Email:
+        <input type="text" data-field="email" value="luky@gmail.com">
+    </label>
+    <button class="submit">送出</button>
+    <button class="clear">清空</button>
+    <button class="reset">初始化</button>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js">
+  </script>
+  <script>
+    $('.submit').on('click', function(){
+      let name = $('[data-field="name"]').val();
+      let phone= $('[data-field="phone"]').val();
+      let email= $('[data-field="email"]').val();
+        
+      console.log(name);
+      console.log(phone);
+      console.log(email);
+
+    });
+
+    $('.clear').on('click', function(){
+     $('[data-field="name"]').val("");
+     $('[data-field="phone"]').val("");
+     $('[data-field="email"]').val("");
+        
+    });
+
+    $('.reset').on('click', function(){
+     $('[data-field="name"]').val("root");
+     $('[data-field="phone"]').val("0800-000-000");
+     $('[data-field="email"]').val("luky@gmail.com");
+        
+    });
+
+    
+
+  </script>
+</body>
+</html>
