@@ -8,24 +8,38 @@
 
 </head>
 <style>
+  .contaner{
+    width: 50%;
+    border: black 1px solid;
+    margin: auto;
+    padding: 10px;
+  }
   label{
     display: block;
   }
+  button{
+    margin-top: 10px;
+  }
 </style>
 <body>
-  <label>
-    姓名:
-    <input type="text" data-field="name" value="">
-  </label>
-  <label>
-    電話:
-    <input type="text" data-field="phone" value="">
-  </label>
-  <label>
-    Email:
-      <input type="text" data-field="email" value="">
-  </label>
-  <button class="submit">送出</button>
+  <div class="contaner">
+    <label>
+      姓名:
+      <input type="text" data-field="name" value="root">
+    </label>
+    <label>
+      電話:
+      <input type="text" data-field="phone" value="0800-000-000">
+    </label>
+    <label>
+      Email:
+        <input type="text" data-field="email" value="luky@gmail.com">
+    </label>
+    <button class="submit">送出</button>
+    <button class="clear">清空</button>
+    <button class="reset">初始化</button>
+
+  </div>
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js">
   </script>
@@ -40,6 +54,23 @@
       console.log(email);
 
     });
+
+    $('.clear').on('click', function(){
+     $('[data-field="name"]').val("");
+     $('[data-field="phone"]').val("");
+     $('[data-field="email"]').val("");
+        
+    });
+
+    $('.reset').on('click', function(){
+     $('[data-field="name"]').val("root");
+     $('[data-field="phone"]').val("0800-000-000");
+     $('[data-field="email"]').val("luky@gmail.com");
+        
+    });
+
+    
+
   </script>
 </body>
 </html>
