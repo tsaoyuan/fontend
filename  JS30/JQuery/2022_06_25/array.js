@@ -8,3 +8,9 @@ const even = num.filter( function (element) {
   return element % 2 == 0;
 } );
 console.log(even);
+
+const a = [1, 2, 3, 4, 5];
+const b = a.map((element)=>{
+  return element**2;
+})
+console.log(b);
