@@ -14,3 +14,5 @@ const b = a.map((element)=>{
   return element**2;
 })
 console.log(b);
+console.log(a.unshift(2,3));
+console.log(a);
