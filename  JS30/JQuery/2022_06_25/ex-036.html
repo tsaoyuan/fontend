@@ -12,39 +12,27 @@ let month = prompt("請輸入月份", '');
 month = Number(month);
 
 // 三個月份為一個季節，採無條件進位制
-// let season = Math.ceil( month/3 );
+let season = Math.ceil( month/3 );
 
-console.log( month );
+if (season === 1) {
+  alert("春天");
+}
+else if(season === 2){
+  alert("夏天");
+}
+else if(season === 3){
+  alert("秋天");
+}
+else if(season === 4){
+  alert("冬天");
+}
+else{
+  alert("other");
+}
 
-switch ( month ) {
-  case 1:
-  case 2:
-  case 3:
-    alert("春天");
-  break;
 
-  case 4:
-  case 5:
-  case 6:
-    alert("夏天");
-  break;
 
-  case 7:
-  case 8:
-  case 9:
-    alert("秋天");
-  break;
-
-  case 10:
-  case 11:
-  case 12:
-    alert("冬天");
-  break;
-
-  default:
-    alert("數值有誤");
-  break;
-};
+  
 
 </script>
 
