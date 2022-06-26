@@ -120,7 +120,23 @@
 
     $('.btn').on('click', function () {
       const ans = $('select').val()
-      console.log(ans);
+      // console.log(ans);
+      if(ans === 'col-sm-1'){
+        $('.card').addClass('col-sm-1')
+        $('.card').removeClass('col-sm-2 col-sm-3 col-sm-4')
+      }
+      else if(ans === 'col-sm-2'){
+        $('.card').addClass('col-sm-2')
+        $('.card').removeClass('col-sm-1 col-sm-3 col-sm-4')
+      }
+      else if(ans === 'col-sm-3'){
+        $('.card').addClass('col-sm-3')
+        $('.card').removeClass('col-sm-1 col-sm-2 col-sm-4')
+      }
+      else if(ans === 'col-sm-4'){
+        $('.card').addClass('col-sm-4')
+        $('.card').removeClass('col-sm-1 col-sm-2 col-sm-3')
+      }
 
     });
 
