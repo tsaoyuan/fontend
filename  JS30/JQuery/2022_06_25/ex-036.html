@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>switch - case</title>
+</head>
+<body>
+
+<script type="text/javascript">
+
+let month = prompt("請輸入月份", '');
+
+month = Number(month);
+
+// 三個月份為一個季節，採無條件進位制
+let season = Math.ceil( month/3 );
+const ans = ['', '春', '夏', '秋', '冬']
+alert( ans[season] || '數值有誤');
+
+</script>
+
+</body>
+</html>
